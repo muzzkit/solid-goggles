@@ -9,6 +9,6 @@ const HomePage: NextPage = () => {
       <Home />
     </SidebarWithHeader> 
   );
-};
+}; 
 
 export default HomePage;
