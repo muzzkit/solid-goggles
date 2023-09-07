@@ -2,7 +2,7 @@ import Moralis from 'moralis';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const config = {
-  domain: 'solid-goggles.vercel.app' || process.env.APP_DOMAIN  ,
+  domain: 'solid-goggles.vercel.app',
   statement: 'Please sign this message to confirm your identity.',
   uri: process.env.NEXTAUTH_URL,
   timeout: 60,
