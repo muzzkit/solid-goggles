@@ -15,6 +15,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const message = await Moralis.Auth.requestMessage({
+      domain,
       address,
       chain,
       network,
