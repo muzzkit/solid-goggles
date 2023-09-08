@@ -2,9 +2,9 @@ import Moralis from 'moralis';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 const config = {
-  domain:`www.${process.env.APP_DOMAIN}`,
+  domain: process.env.NEXTAUTH_URL ? new URL(process.env.NEXTAUTH_URL).host : '',
   statement: 'Please sign this message to confirm your identity.',
-  uri: process.env.NEXTAUTH_URL || 'http://localhost:3000',
+  uri: process.env.NEXTAUTH_URL || '',
   timeout: 60,
 };
 
