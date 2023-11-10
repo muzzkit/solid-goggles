@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <VStack w={'full'}>
       <Heading size="md" marginBottom={6}>
-         Built With Typescript and Nextjs ❤️
+         Only support erc-20 for Now <br/> Built With Typescript and Nextjs ❤️
       </Heading>
     </VStack>
   );
